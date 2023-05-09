@@ -1,0 +1,837 @@
+@charset "UTF-8";
+/* 有些標籤有預設值，所以先設0 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+#fp:first-letter {
+  font-size: 260%; /*首字要放大的比率大小*/
+  color: rgb(3, 3, 3);
+  float: left;
+  padding-right: 2px; /*首字與右邊的距離*/
+  line-height: 100%; /*首字放大的行高*/
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  box-shadow: 2px 2px 2.5px 4px #14274d;
+}
+
+.headerText {
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+}
+
+header {
+  background-color: #dad8d5;
+  width: 100%;
+  padding: 1rem;
+}
+
+.headText {
+  font-size: 1rem;
+  padding: 0.3rem 0rem;
+  text-align: justify; /* 讓文字左右對齊 */
+}
+
+.headTitle {
+  font-size: 2rem;
+}
+
+.pic {
+  padding: 3rem 2rem;
+}
+
+nav {
+  background-color: #14274d;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem; /* 將導覽列往右移動 */
+  padding-right: 1.5rem;
+  list-style-type: none; /* 標題前面黑點去除 */
+  margin-bottom: 0rem;
+}
+nav ul div {
+  display: flex;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+nav ul li a:hover {
+  color: rgb(216, 222, 228);
+  background-color: rgba(72, 89, 110, 0.7764705882);
+}
+
+.active {
+  background-color: rgba(114, 137, 168, 0.5882352941);
+  color: rgb(216, 222, 228);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main p {
+  text-align: justify;
+}
+main section.left,
+main section.right {
+  padding: 1.5rem;
+}
+main section.left {
+  background-color: #e7dccb;
+  flex: 4 1 550px;
+}
+main section.left section.intro {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 12rem 3rem;
+}
+main section.right {
+  background-color: rgba(231, 220, 203, 0.6078431373);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*grow, shrink, basis*/
+  flex: 1 1 250px;
+}
+main section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+main section.right p {
+  margin: 1rem 0rem;
+}
+main .sticky_left {
+  position: sticky;
+  top: 12rem;
+  z-index: 6;
+}
+main section.box {
+  padding: 1.5rem;
+  background-color: #e7dccb;
+}
+main section.box ol {
+  padding: 0.5rem 0.75rem;
+}
+main section.box a .return {
+  background-color: rgba(165, 168, 175, 0.662745098);
+  padding: 1rem;
+  border-radius: 50%;
+}
+main section.box section.economy_container {
+  display: flex;
+}
+main section.box section.economy_container section.economy_nav {
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+}
+main section.box section.economy_container section.economy_nav a {
+  color: #14274d;
+  padding: 0.8rem 0.75rem;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+main section.box section.economy_container section.economy_nav a:hover {
+  color: rgb(216, 222, 228);
+  background-color: rgba(72, 89, 110, 0.7764705882);
+}
+main section.box section.economy_container section.economy_article {
+  width: 90%;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.box section.economy_container section.economy_article img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+main section.box .next {
+  display: flex;
+  justify-content: space-between;
+}
+main section.box .next p {
+  margin: 1rem;
+}
+main section.box .next a {
+  color: #111212;
+  text-decoration: none;
+}
+main section.box .next a:hover {
+  color: rgba(62, 65, 65, 0.6745098039);
+}
+main section.agriculture_box {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 5rem;
+  background-color: #e7dccb;
+}
+main section.agriculture_box ol {
+  padding: 1.2rem;
+}
+main section.agriculture_box ol li {
+  padding: 0.5rem;
+}
+main section.agriculture_box section.article {
+  background-color: #d1c9bd;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.agriculture_box section.article img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main section.agriculture_box section.video {
+  max-width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0rem;
+  flex-wrap: wrap;
+}
+main section.second section.time {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 80vh;
+  width: 90%;
+  flex: 1 1 300px;
+}
+main section.second section.time div.image-container {
+  max-width: 10vw;
+  max-height: 10vw;
+  align-items: center;
+  justify-content: center;
+}
+main section.second section.time div.image-container img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+main section.second section.time div.image-container img:hover {
+  transform: scale(1.1);
+}
+main section.second section.time p {
+  text-align: center;
+  align-items: center;
+}
+main section.second section.time a {
+  text-decoration: none;
+  color: #111212;
+}
+main section.cbox {
+  padding: 1.5rem;
+  background-color: #dacdb9;
+}
+main section.box1 {
+  min-height: 50vh;
+  width: 40%;
+  background-image: url(../index_nav/農業改革.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 0rem;
+  flex: 1.5 2 300px;
+}
+main section.box1 a {
+  background-color: rgba(138, 79, 50, 0.9176470588);
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.box1 a:hover {
+  color: aliceblue;
+  background-color: rgba(138, 79, 50, 0.2470588235);
+}
+main section.box1 a h3 {
+  padding-top: 25%;
+  margin-left: 3rem;
+}
+main section.box1 a h5 {
+  margin-left: 3rem;
+}
+main section.box1 a hr {
+  width: 45%;
+  margin-left: 3rem;
+}
+main section.box2 {
+  flex: 3 2 500px;
+  min-height: 50vh;
+  width: 40%;
+  background-image: url(../index_nav/工業改革.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 0rem;
+}
+main section.box2 a {
+  background-color: rgba(97, 146, 174, 0.8941176471);
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.box2 a:hover {
+  color: aliceblue;
+  background-color: rgba(103, 166, 202, 0.3647058824);
+}
+main section.box2 a h3 {
+  padding-top: 14%;
+  margin-left: 3rem;
+}
+main section.box2 a h5 {
+  margin-left: 3rem;
+}
+main section.box2 a hr {
+  width: 35%;
+  margin-left: 3rem;
+}
+main section.box3 {
+  flex: 3 1 300px;
+  min-height: 50vh;
+  width: 40%;
+  background-image: url(../index_nav/經濟起飛.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 0rem;
+}
+main section.box3 a {
+  background-color: rgba(130, 71, 121, 0.8862745098);
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.box3 a:hover {
+  color: aliceblue;
+  background-color: rgba(107, 55, 99, 0.3529411765);
+}
+main section.box3 a h3 {
+  padding-top: 21%;
+  margin-left: 3rem;
+}
+main section.box3 a h5 {
+  margin-left: 3rem;
+}
+main section.box3 a hr {
+  width: 35%;
+  margin-left: 3rem;
+}
+main section.box4 {
+  flex: 1 1 500px;
+  min-height: 50vh;
+  width: 40%;
+  background-image: url(../index_nav/聯絡作者.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 0rem;
+}
+main section.box4 a {
+  background-color: rgba(187, 177, 98, 0.8784313725);
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.box4 a:hover {
+  color: aliceblue;
+  background-color: rgba(244, 232, 150, 0.2549019608);
+}
+main section.box4 a h3 {
+  padding-top: 25%;
+  margin-left: 3rem;
+}
+main section.box4 a h5 {
+  margin-left: 3rem;
+}
+main section.box4 a hr {
+  width: 45%;
+  margin-left: 3rem;
+}
+main section.agricultureBox {
+  display: flex;
+}
+main section.agricultureBox section.agriculture_box1,
+main section.agricultureBox section.agriculture_box5 {
+  flex-direction: column;
+  background-color: rgba(228, 226, 222, 0.6078431373);
+  min-height: 50vh;
+  width: 40%;
+  display: flex;
+  margin-left: 8rem;
+  margin-top: 5rem;
+  padding: 2rem 2rem 2rem 0rem;
+  flex: 1 1 500px;
+}
+main section.agricultureBox section.agriculture_box1 hr,
+main section.agricultureBox section.agriculture_box5 hr {
+  width: 45%;
+  margin-left: 3rem;
+}
+main section.agricultureBox section.agriculture_box1 h3,
+main section.agricultureBox section.agriculture_box1 p,
+main section.agricultureBox section.agriculture_box5 h3,
+main section.agricultureBox section.agriculture_box5 p {
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+}
+main section.agricultureBox section.agriculture_box1 a,
+main section.agricultureBox section.agriculture_box5 a {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  background-color: rgba(206, 196, 122, 0.8784313725);
+  height: 10%;
+  width: 23%;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.agricultureBox section.agriculture_box1 a:hover,
+main section.agricultureBox section.agriculture_box5 a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(244, 232, 150, 0.2549019608);
+}
+main section.agricultureBox section.agriculture_box2,
+main section.agricultureBox section.agriculture_box6 {
+  background-color: rgba(228, 226, 222, 0.6078431373);
+  flex: 3 1 300px;
+  min-height: 50vh;
+  margin-top: 5rem;
+  margin-right: 8rem;
+  width: 40%;
+  display: flex;
+  padding: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.agricultureBox section.agriculture_box2 img,
+main section.agricultureBox section.agriculture_box6 img {
+  max-height: 90%;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  border-width: 0.6rem;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+main section.agricultureBox section.agriculture_box3 {
+  background-color: rgba(200, 198, 194, 0.6078431373);
+  flex: 3 1 300px;
+  min-height: 50vh;
+  margin-top: 0rem;
+  margin-left: 8rem;
+  width: 40%;
+  display: flex;
+  padding: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.agricultureBox section.agriculture_box3 img {
+  max-height: 90%;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  border-width: 0.6rem;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+main section.agricultureBox section.agriculture_box4 {
+  flex-direction: column;
+  background-color: rgba(200, 198, 194, 0.6078431373);
+  min-height: 50vh;
+  width: 40%;
+  display: flex;
+  margin-right: 8rem;
+  margin-top: 0rem;
+  padding: 2rem;
+  flex: 1 1 500px;
+}
+main section.agricultureBox section.agriculture_box4 hr {
+  width: 45%;
+  margin-left: 3rem;
+}
+main section.agricultureBox section.agriculture_box4 h3,
+main section.agricultureBox section.agriculture_box4 p {
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+}
+main section.agricultureBox section.agriculture_box4 a {
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  background-color: rgba(199, 189, 110, 0.8784313725);
+  height: 15%;
+  width: 23%;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main section.agricultureBox section.agriculture_box4 a:hover {
+  color: rgb(249, 249, 249);
+  background-color: rgba(244, 232, 150, 0.2549019608);
+}
+main section.agricultureBox section.agriculture_box5,
+main section.agricultureBox section.agriculture_box6 {
+  margin-top: 0rem;
+}
+main section.agricultureBox section.agriculture_box1,
+main section.agricultureBox section.agriculture_box2,
+main section.agricultureBox section.agriculture_box3,
+main section.agricultureBox section.agriculture_box4 {
+  border-width: 0.9px;
+  border-bottom-style: solid;
+  border-color: rgb(151, 134, 119);
+}
+main section.FromLeft {
+  background-color: rgb(29, 46, 79);
+  padding: 3rem 10rem;
+  margin-right: 0.3px;
+}
+main section.FromLeft label {
+  color: white;
+}
+main section.FromLeft input,
+main section.FromLeft textarea {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(44, 61, 93);
+}
+main section.FromLeft section.EmailBox {
+  padding-left: 6.8rem;
+}
+main section.FromRight {
+  flex: 1 1 400px;
+  background-color: rgb(29, 46, 79);
+  display: flex;
+  flex-direction: column;
+}
+main section.FromRight h4,
+main section.FromRight p,
+main section.FromRight a,
+main section.FromRight hr {
+  color: white;
+}
+main section.FromRight h4 {
+  padding-left: 5rem;
+  padding-top: 4.5rem;
+}
+main section.FromRight p,
+main section.FromRight a {
+  padding-top: 1rem;
+  padding-left: 9rem;
+  padding-bottom: 3rem;
+}
+main section.FromRight img {
+  background-color: aliceblue;
+  border-radius: 40%;
+  margin-right: 2rem;
+}
+main section.login {
+  padding-left: 42%;
+  padding-top: 5%;
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(29, 46, 79);
+}
+main section.login label {
+  padding-right: 1rem;
+  color: white;
+}
+main section.login input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(44, 61, 93);
+}
+main div.discuss {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.discuss nav {
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  background-color: #dac8b5;
+  margin-top: 5rem;
+}
+main div.discuss nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 1rem 1rem;
+  list-style-type: none; /* 標題前面黑點去除 */
+  margin-bottom: 0rem;
+}
+main div.discuss nav ul div {
+  display: flex;
+}
+main div.discuss nav ul li {
+  display: flex;
+}
+main div.discuss nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: rgb(90, 85, 85);
+  text-decoration: none; /* 將底線刪除 */
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+main div.discuss nav ul li a:hover {
+  color: aliceblue;
+  background-color: #a79685;
+}
+main div.discuss .active {
+  color: rgb(138, 141, 144);
+}
+main div.discuss section.discussBox {
+  width: 75%;
+  background-color: #cebaa5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+main div.discuss section.discussBox section.article {
+  background-color: #e2ddd8;
+  border: 1px rgb(163, 162, 162) solid;
+  width: 96%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main div.discuss section.discussBox section.article section.author_information {
+  display: flex;
+}
+main div.discuss section.discussBox section.article section.author_information p {
+  margin: 0rem;
+}
+main div.discuss section.discussBox section.article section.article_information {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #dad8d5;
+  font-size: 14px;
+  font-weight: 200px;
+  line-height: 1em;
+  padding: 20px;
+}
+footer a {
+  color: #46403e;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgba(70, 64, 62, 0.6549019608);
+}
+footer section.links a {
+  margin: 0rem 0.8rem;
+}
+footer section.links a img {
+  width: 2.2vw;
+  height: 2.2vw;
+}
+
+/* 回到本頁開頭 */
+.pagetop {
+  text-align: right;
+  margin: 1em;
+}
+
+#curve_chart {
+  width: 100%;
+  height: 40vh;
+}
+
+@media screen and (max-width: 550px) {
+  footer section.links a img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media screen and (max-width: 866px) {
+  nav ul div {
+    flex-direction: column;
+  }
+  section.video {
+    flex-direction: column;
+  }
+  section.right {
+    width: 100%;
+  }
+  section.time {
+    flex-direction: column;
+  }
+  section.agriculture_box {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #e7dccb;
+  }
+  section.agriculture_box ol {
+    padding: 1.2rem;
+  }
+  section.agriculture_box ol li {
+    padding: 0.5rem;
+  }
+  section.agriculture_box section.article {
+    background-color: #d1c9bd;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  section.agriculture_box section.article img {
+    width: 100%;
+    height: 25vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-radius: 8px;
+  padding-left: 2rem;
+  width: 100%;
+}
+table p {
+  align-items: center;
+  justify-content: center;
+}
+
+th.title {
+  background-color: rgba(90, 60, 51, 0.5215686275);
+  text-align: center;
+}
+
+td.construction {
+  background-color: rgba(163, 118, 102, 0.2666666667);
+}
+
+th {
+  border: solid 1px #46403e;
+  padding: 16px 8px;
+}
+
+td {
+  border: solid 1px #46403e;
+  border-top: solid 0px;
+  color: #46403e;
+  display: flex;
+  text-align: justify; /*讓文字左右對齊*/
+}
+
+.collapse {
+  padding: 0.5rem;
+}
+
+.accordion-item {
+  background-color: rgb(233, 229, 221);
+}
+
+.accordion-button {
+  background-color: #f2ecde;
+  outline: none;
+  border: none;
+}
+.accordion-button:hover {
+  background-color: #dad2c1;
+}
+.accordion-button:focus {
+  outline: none;
+  color: #111212;
+  background-color: #e8e3db;
+}
+
+.btn.btn-primary {
+  outline: none;
+  border: none;
+  color: #46403e;
+  background-color: rgba(163, 118, 102, 0);
+}
+
+button:focus {
+  outline: none;
+  background: none;
+}
+
+ul {
+  padding-left: 1rem;
+}
+ul li a {
+  color: #46403e;
+}
+ul li a:hover {
+  color: rgba(70, 64, 62, 0.7176470588);
+}/*# sourceMappingURL=style.css.map */

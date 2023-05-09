@@ -1,0 +1,101 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #14274d;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#T {
+  stroke-dasharray: 327px;
+  stroke-dashoffset: 327px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#a1 {
+  stroke-dasharray: 407px;
+  stroke-dashoffset: 407px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#i {
+  stroke-dasharray: 218px;
+  stroke-dashoffset: 218px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#w {
+  stroke-dasharray: 527px;
+  stroke-dashoffset: 527px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#a2 {
+  stroke-dasharray: 407px;
+  stroke-dashoffset: 407px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#n {
+  stroke-dasharray: 363px;
+  stroke-dashoffset: 363px;
+  animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+#third {
+  stroke-dasharray: 1505px;
+  stroke-dashoffset: 1505px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fourth {
+  stroke-dasharray: 1353px;
+  stroke-dashoffset: 1353px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#fifth {
+  stroke-dasharray: 1360px;
+  stroke-dashoffset: 1360px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#sixth {
+  stroke-dasharray: 1266px;
+  stroke-dashoffset: 1266px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#seventh {
+  stroke-dasharray: 1464px;
+  stroke-dashoffset: 1464px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#eighth {
+  stroke-dasharray: 892px;
+  stroke-dashoffset: 892px;
+  animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+svg {
+  animation: fill 1s ease-in forwards 2.4s;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fce6ae;
+  }
+}/*# sourceMappingURL=animation.css.map */

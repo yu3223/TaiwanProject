@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  box-shadow: 2px 2px 2.5px 4px #14274d;
+}
+
+.headerText {
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+.headerTitle {
+  font-size: 2.5rem;
+}
+
+header {
+  background-color: #dad8d5;
+  width: 100%;
+  padding: 1rem;
+
+  // box-shadow: 3px 3px 5px 6px #14274d;
+}
+
+.headText {
+  font-size: 1rem;
+  padding: 0.3rem 0rem;
+  text-align: justify; /* 讓文字左右對齊 */
+}
+.headTitle {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #e7dccb;
+  text-align: justify;
+}
+
+i {
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header#dt {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7dccb;
+  h1 {
+    color: rgb(89, 48, 48);
+    font-size: 3rem;
+  }
+}
+
+.active {
+  background-color: #bba690;
+}
+
+section.top {
+  nav {
+    background-color: #14274d;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1rem; /* 將導覽列往右移動 */
+      padding-right: 1.5rem;
+      list-style-type: none; /* 標題前面黑點去除 */
+      margin-bottom: 0rem;
+      div {
+        display: flex;
+      }
+      li {
+        display: flex;
+        a {
+          padding: 0.5rem 0.75rem;
+          color: aliceblue;
+          text-decoration: none; /* 將底線刪除 */
+          font-size: 1.25rem;
+          transition: all 0.25s ease;
+          &:hover {
+            color: rgb(216, 222, 228);
+            background-color: #48596ec6;
+          }
+        }
+      }
+    }
+    .active {
+      background-color: #7289a896;
+      color: rgb(216, 222, 228);
+    }
+  }
+}
+
+div.discuss {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  nav {
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background-color: #dac8b5;
+    margin-top: 1.5rem;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none; /* 標題前面黑點去除 */
+      margin-bottom: 0rem;
+      div {
+        display: flex;
+      }
+      li {
+        display: flex;
+        a {
+          padding: 0.5rem 0.75rem;
+          color: rgb(90, 85, 85);
+          text-decoration: none; /* 將底線刪除 */
+          font-size: 1.25rem;
+          transition: all 0.25s ease;
+          &:hover {
+            color: aliceblue;
+          }
+        }
+      }
+    }
+  }
+
+  section#discussBox,
+  section#discussBox_agriculture,
+  section#discussBox_industry,
+  section#discussBox_economy {
+    width: 75%;
+    background-color: #e4d4c3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    section.article {
+      background-color: #fafafa;
+      border: 1px rgb(163, 162, 162) solid;
+      width: 96%;
+      margin-top: 0.8rem;
+      margin-bottom: 0.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      section.author_information {
+        display: flex;
+        p {
+          margin: 2rem 1rem 1rem 1rem;
+        }
+        i {
+          margin: 2.2rem 0.2rem 1rem 0rem;
+          width: 5%;
+          height: 5%;
+        }
+        p.post-author {
+          margin: 2rem 1rem 1rem 0rem;
+        }
+        .post-class {
+          color: rgb(125, 121, 121);
+          margin: 2rem 1rem 1rem 1rem;
+        }
+      }
+      section.article_information {
+        display: flex;
+        justify-content: space-between;
+      }
+      p.post-content {
+        p {
+          display: inline;
+        }
+        a {
+          color: rgb(141, 128, 128);
+          text-decoration: none; /* 將底線刪除 */
+          &:hover {
+            color: rgb(184, 174, 174);
+          }
+        }
+        .content_a::after {
+          content: "...展開全文";
+        }
+        .hide {
+          display: none;
+        }
+
+        .hide-a::after {
+          content: "隱藏部分文章";
+        }
+      }
+
+      button {
+        float: right;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        color: #292828;
+      }
+      button.trash {
+        background-color: #fafafa;
+      }
+    }
+  }
+}
+
+div.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  section.postTitle {
+    width: 75%;
+    background-color: #f3efef;
+    h1 {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(86, 59, 59);
+      font-size: 2rem;
+      padding: 1rem 0rem 1rem 0rem;
+    }
+  }
+
+  section.newPost {
+    width: 75%;
+    background-color: #fffeff;
+    justify-content: center;
+    align-items: center;
+    form {
+      //justify-content: left;
+      // align-items: left;
+      flex-direction: column;
+      select {
+        color: #8d8d8d;
+        caret-color: #8d8d8d;
+        background-color: #fffeff;
+        outline: none;
+      }
+      input,
+      textarea {
+        color: #1a1919;
+        caret-color: #8d8d8d;
+        background-color: #fffeff;
+        outline: none;
+      }
+      input,
+      select {
+        width: 50%;
+        border-color: #ececec;
+        border-width: 1.5px;
+        border-style: solid;
+        margin: 1rem 0rem 0rem 1.5rem;
+      }
+      textarea {
+        text-align: justify;
+        font-size: 1rem;
+        margin-right: 2.5rem;
+        border: none;
+        margin-left: 1.8rem;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #a8a7a7; /* 更改placeholder的字體顏色  */
+        font-size: 1.75rem; /* 更改placeholder的字體大小  */
+      }
+      textarea::-webkit-input-placeholder {
+        color: #a8a7a7; /* 更改placeholder的字體顏色  */
+        font-size: 1.75rem; /* 更改placeholder的字體大小  */
+      }
+      // select::-webkit-input-placeholder {
+      //   color: #a8a7a7; /* 更改placeholder的字體顏色  */
+      //   font-size: 1.75rem; /* 更改placeholder的字體大小  */
+      // }
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+
+  input,
+  button {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+    margin: 0.1rem;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
+  input::placeholder {
+    color: #8d8d8d;
+    opacity: 1;
+  }
+  textarea::placeholder {
+    color: #8d8d8d;
+    opacity: 1; /* Firefox */
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  div.bnt {
+    display: flex;
+    justify-content: right;
+
+    button.add {
+      width: 17%;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      background-color: #ede4d8;
+      color: #878583;
+      &:hover {
+        color: rgb(106, 76, 76);
+        background-color: #d8c8b3;
+      }
+    }
+    button.cancle {
+      width: 17%;
+      margin-right: 3rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      color: #9e9994;
+      &:hover {
+        color: rgb(106, 76, 76);
+        background-color: #e6e4e4;
+      }
+    }
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+
+footer {
+  background-color: #dad8d5;
+
+  font-size: 14px;
+  font-weight: 200px;
+  line-height: 1em;
+  padding: 20px;
+  a {
+    color: #46403e;
+    text-decoration: none;
+    &:hover {
+      color: #46403ea7;
+    }
+  }
+  section.links {
+    a {
+      margin: 0rem 0.8rem;
+      img {
+        width: 2.2vw;
+        height: 2.2vw;
+      }
+    }
+  }
+}
+/* 回到本頁開頭 */
+.pagetop {
+  text-align: right;
+  margin: 1em;
+}
+
+@media screen and (max-width: 550px) {
+  // main {
+  //   section.second {
+  //     section.time {
+  //       div.economy {
+  //         img {
+  //           width: 50vw;
+  //           height: 50vw;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  footer {
+    section.links {
+      a {
+        img {
+          width: 5vw;
+          height: 5vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 866px) {
+  nav ul div {
+    flex-direction: column;
+  }
+  section.video {
+    flex-direction: column;
+  }
+  section.right {
+    width: 100%;
+  }
+  section.time {
+    flex-direction: column;
+  }
+  section.agriculture_box {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    //padding: 1rem;
+    background-color: #e7dccb;
+    ol {
+      padding: 1.2rem;
+      li {
+        padding: 0.5rem;
+      }
+    }
+    section.article {
+      background-color: #d1c9bd;
+      padding: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 25vh;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

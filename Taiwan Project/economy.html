@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>經濟起飛｜台灣發展歷史</title>
+    <meta
+      name="description"
+      content="此網站介紹台灣過去 70年的經濟發展與相關政策"
+    />
+    <base target="_blank" />
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./Icons/taiwanIcon.png" />
+    <link rel="bookmark" href="./Icons/taiwanIcon.png" />
+
+    <link rel="stylesheet" href="./twicon/twicon.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google font setting -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "GDP"],
+          ["1960", 34394],
+          ["1965", 114762],
+          ["1970", 231397],
+          ["1975", 601778],
+          ["1980", 1522459],
+          ["1980", 2535056],
+          ["1990", 4474288],
+          ["1995", 7391062],
+          ["2000", 10328549],
+          ["2005", 12036675],
+          ["2010", 14060345],
+        ]);
+
+        var options = {
+          title: "過去台灣60年GDP變化圖表",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- 標題 -->
+    <section class="top">
+    <header>
+      <h1 class="headerTitle">
+        <i class="twicon-main-island"></i>台灣經濟發展歷史
+      </h1>
+      <h3 class="headerText">過去七十年台灣發展的歷史以及相關政策</h3>
+    </header>
+
+    <!-- 導覽列 -->
+    <nav>
+      <ul>
+        <div>
+        <li>
+          <a target="_self" href="./index.html"
+            ><i class="twicon-main-island"></i> 首頁</a
+          >
+        </li>
+        <li>
+          <a target="_self" href="./agriculture.html"
+            ><i class="twicon-lovers-brg"></i> 農業改革</a
+          >
+        </li>
+        <li>
+          <a target="_self" href="./industry.html"
+            ><i class="twicon-fb-stn"></i> 工業改革</a
+          >
+        </li>
+        <li>
+          <a target="_self" class="active" href="#"
+            ><i class="twicon-taipei101"></i> 經濟起飛</a
+          >
+        </li>
+        <li>
+          <a target="_self" href="./author.html"
+            ><i class="twicon-l-youbike"></i> 聯絡我們</a
+          >
+        </li>
+        <li>
+          <a target="_self" href="./discuss.html"
+            ><i class="twicon-l-17live"></i> 討論區</a
+          >
+        </li>
+      </div>
+      <div>
+        <li>
+          <a target="_self" href="./login.html"
+            ><i class="twicon-queens-head"></i> 登入/註冊</a
+          >
+        </li>
+      </div>
+      </ul>
+    </nav>
+  </section>
+  
+
+    <!-- 主要內容 -->
+    <main>
+    <section class="box">
+      <h1 class="headTitle">台灣經濟發展</h1>
+      <hr />
+      <p class="headText" id="fp">
+        在日治時期前期，臺灣在日本經濟上的地位是糧食生產基地，僅有少數的食物儲藏加工業和輕工業，在太平洋戰爭爆發後，台灣因戰略地位被日本政府重新定位為南進基地，因此在台灣南部的高雄一帶發展軍事工業。中華民國政府遷臺後，時任中華民國總統蔣中正將臺灣視為以武力反攻大陸的基地，奉行軍事優先和穩定農業的經濟政策。自 1960年代起，臺灣輕工業發展快速，重工業則居於次要地位。中央政府為了增加出口換取外匯，還設立加工出口區來增加外貿收入。
+        <br />
+        <br />
+      </p>
+       <section class="second">
+         <section class="time">
+           <div class="economy">
+             <div class="image-container">
+              <a target="_self" href="./奠基.html">
+               <img
+               src="./Icons/奠基.svg" alt="經濟奠基時期"
+               />
+              </a>
+             </div>   
+             <br> 
+             <a target="_self" href="./奠基.html">     
+             <h4>經濟奠基時期</h4>
+             <p>（1950-1959）</p>
+            </a>
+           </div>
+  
+           <div class="economy">
+             <div class="image-container">
+              <a target="_self" href="./起飛.html">
+              <img
+               src="./Icons/起飛.svg" alt="經濟起飛時期"
+               /></a>
+              </div> 
+               <br>
+               <a target="_self" href="./起飛.html">        
+             <h4>經濟起飛時期</h4>
+             <p>（1960-1973）</p></a>  
+           </div>
+  
+           <div class="economy">
+            <div class="image-container">
+                <a target="_self" href="./自由.html">
+              <img
+               src="./Icons/自由.svg" alt="經濟自由時期"
+               /></a></div>  
+               <br> 
+               <a target="_self" href="./自由.html">        
+             <h4>經濟自由時期</h4>
+             <p>（1973-1990）</p></a>
+           </div>
+  
+           <div class="economy">
+             <div class="image-container">
+              <a target="_self" href="./穩定.html">
+              <img
+               src="./Icons/穩定.svg" alt="經濟穩定時期"
+               /></a></div>
+               <br>    
+               <a target="_self" href="./穩定.html">     
+             <h4>經濟穩定時期</h4>
+             <p>（1990-2006）</p></a> 
+           </div>
+         </section>
+       </section>
+      <br />
+      <br>
+
+
+      <h1 class="headTitle">十大建設</h1>
+      <hr />
+      <p class="headText" id="fp">
+        十大建設是指中華民國政府於 1974年至 1979年間，時任行政院院長蔣經國為改善臺灣的基礎設施及產業升級所提出的一系列重大基礎建設工程，總共分為十大項目，其中有六項是交通運輸建設、三項是重工業建設、一項為能源項目建設，總花費在當時估計達到了新臺幣二千億至三千億元之間，這些計畫帶領中華民國走出能源危機，加速了當時的經濟及社會的發展，並對臺灣經濟起飛產生巨大的貢獻。
+        中沙大橋屬於中山高速公路的一個環節，象徵十大建設期間沙烏地阿拉伯對臺援助的情況自 1965年起，臺灣經濟逐漸好轉，工業建設加速成長，對外貿易開始蓬勃發展；但是公共設施及重要原料已無法適應需求，經濟發展面臨受限瓶頸，蔣經國內閣制定「穩定當前經濟措施方案」，得以妥切解決。在當時，許多高等級公共基本建設更是匱乏欠缺，如高速道路、港埠、機場、發電廠等。1973年 10月，全球發生第一次石油危機，油價上漲、物資短缺，導致各國通貨膨脹。受到全球經濟不景氣的影響，為提升跟深化總體經濟發展，時任行政院院長蔣經國提出開始推行 10項大型基礎建設計劃。
+      </p>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          
+            <h2 class="accordion-header" id="flush-heading1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+              中正國際機場            
+              </button>
+            </h2>
+          
+          <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">曾在落成後命名爲中正國際機場以紀念先總統蔣公，係因應臺北松山機場的運量飽和，於距臺北市西南方約 40公里的桃園縣大園鄉（今桃園市大園區），另新建占地 1,223公頃的新國際機場。原計畫名在介石/桃園國際機場中挑選，1979年 2月 26日啟用之際訂名中正國際機場，2006年 10月（民國 95年）更名回桃園國際機場。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+              台中港
+            </button>
+          </h2>
+          <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">由於台灣進出口長期仰賴高雄港與基隆港兩港，兩港無法負荷，船舶等待時間增加，在淡水、台中、蘇澳選址後，決定以台中市梧棲區為新港港址，命名「台中港」。台中港建設初期以「兩個十年計畫」為名，希望發展為兼具商、漁、工業等功能的多功能人工港，第一期工程部分於 1971年 7月展開細部計畫、1973年 10月完成細部計畫，於 1973年 11月動工、1976年 10月完工，建造7,900公尺的堤防與護岸、深水碼頭 7座，提供 280萬噸的服務容量。
+              第一期總預算約 57億元，實際支用 56.2億元。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+              蘇澳港
+            </button>
+          </h2>
+          <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">隨著中華民國國際貿易的不斷擴展，導致北部主要港口基隆港運量壅塞更加嚴峻，中華民國政府考量除台中港外仍須其他港口幫助其紓解交通量，因此於 1972年核定將此港設定為基隆港的輔助港，1973年正式決定闢建新港，並將此港命名為「蘇澳港」。
+              蘇澳港主要分二期推動，一期工程於 1975年動工、1978年完工，預算 44億；而二期工程則於 1979年動工、1983年完工，預算 37.5億。蘇澳港直至完工，原預計耗費 81.5億元，實際花費 79.8億元，由中華民國政府預算全額支應，完工後年服務能量約 1,000萬噸。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+              中山高速公路
+            </button>
+          </h2>
+          <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">中山高速公路北起基隆，南至高雄前鎮，中以支線連接桃園國際機場，全長 373公里。1971年 8月 14日開工，1974年 7月 29日三重到中壢路段率先通車，1978年 10月 31日中沙大橋啟用，高速公路全線正式通車。 中山高速公路總共建造了 75座交流道、2座隧道、349座橋梁，使用了 3,231公頃的土地，總預算約 429億，其中 81億為國際貸款。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+              鐵路電氣化
+            </button>
+          </h2>
+          <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">鐵路電氣化總共分基隆至竹南段、竹南至彰化段（山、海線同時施作）、彰化至高雄段等三期工程，總預算約 230.8億，其中包含台鐵自籌 7.7億、發行公債 62億、國外借款 108.1億、國際借款 41.5億、關稅 11.5億等。</div>
+          <!-- <img class="ten" src="./十大建設/鐵路電氣化富岡至竹北間試駛電動機車牽引客車_f.jpeg" alt="鐵路電氣化"> -->
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+              北迴鐵路
+            </button>
+          </h2>
+          <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">為使東部鐵路幹線與西部接軌，將花蓮車站移至現址，興建花蓮（新）車站至宜蘭線南聖湖車站（今 蘇澳新站）之單線新線。1979年 12月完工，1980年 2月 1日全線通車。 北迴鐵路建有 81.6公里幹線、 5.7公里新線， 20公尺以上大橋 22座、 16座隧道、設 14站，總預算約 74億元。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+              大煉鋼廠
+            </button>
+          </h2>
+          <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">即中國鋼鐵公司，為了防止依賴外國鋼品太深，減輕外匯負擔，並解除過去因鋼源不一，影響產品精度的缺點，遂決定興建一貫作業煉鋼場，於是出資興辦中國鋼鐵公司，並將其納入十大建設之一。中國鋼鐵公司的一貫作業煉鋼場，占地約 480公頃，位於高雄臨海第四工業區，濱臨高雄港第二港口，自遠洋輸入原料後，可逕泊廠區碼頭起卸，節省運費與轉運成本。
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+              造船廠
+            </button>
+          </h2>
+          <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              即今台灣國際造船公司高雄總廠，坐落於高雄市小港區的臨海工業區內，是十大建設中第一個完成的重要建設，該廠的設立肩負支持航運、貿易、國防及發展關聯工業多目標之基本任務。於 1975年建廠同時，即承建美商 44萬 5千載重噸超級油輪，同時中國造船公司也合併原位於基隆的台灣造船公司（日據時期為台灣首家現代化造船廠）為其基隆總廠。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+             石油化學工業
+            </button>
+          </h2>
+          <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">即今台灣中油股份有限公司高雄煉油總廠，在高雄縣（因高雄縣市合併改制直轄市，併入新成立之高雄市）開發兩處石化工業區—「仁大石化工業區」和「林園石化工業區」。中國石油公司高雄煉油總廠的興建對於台灣的塑膠、合成橡膠、合成纖維及化學品工業之發展而言，不僅減少國內工業對外之依存性，且將增加下游加工產品在外銷上的競爭力。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+              核能發電廠
+            </button>
+          </h2>
+          <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">第一核能發電廠共有兩部機組，其裝置容量各為 63.6萬瓩。核能一廠列入十大建設計畫優先興工，兩部機組分別於 1977年與 1978年完工；第二核能發電廠、第三核能發電廠為核能發電的延伸計畫，後續列入十二大建設計畫，分別於 1981年與 1984年完工。</div>
+          </div>
+        </div>
+      </div>
+
+      <br />   
+      </div>
+             
+      <br />
+      <h1 class="headTitle">今日的台灣</h1>
+      <hr />
+      <ul>
+        <li>
+          <a
+            href="https://www.businesstoday.com.tw/article/category/183015/post/202205210001/"
+            >台灣半導體產業</a
+          >
+        </li>
+        <li>
+          <a href="https://udn.com/news/story/6871/6307391">半導體未來方向</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="pagetop"><a target="_self" href="#top">▲回到本頁開頭</a></p>
+    <h5 align="center">台灣發展歷史網頁</h5>
+    <p class="copyright"></p>
+
+  <section class="links" align="center">
+    <a href="https://twitter.com/?lang=zh-tw"
+      ><img src="./Icons/twitter.svg" alt="twitter"
+    /></a>
+    <a href="https://www.facebook.com/"
+      ><img src="./Icons/facebook.svg" alt="facebook"
+    /></a>
+    <a href="https://www.instagram.com/"
+      ><img src="./Icons/instagram.svg" alt="instagram"
+    /></a>
+    <a href="https://www.youtube.com/"
+      ><img src="./Icons/youtube.svg" alt="youtube"
+    /></a>
+  </section>
+  </footer>
+  </body>
+</html>
